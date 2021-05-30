@@ -37,7 +37,7 @@ class Puzzle:
                 if self.a_star and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()+self.current_level+1
                 elif self.a_star and self.manhattan:
-                    heruistic=self.calculateManhattan()
+                    heruistic=self.calculateManhattan()+self.current_level+1
                 elif self.greedy and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()
                 elif self.greedy and self.manhattan:
@@ -74,7 +74,7 @@ class Puzzle:
                 if self.a_star and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()+self.current_level+1
                 elif self.a_star and self.manhattan:
-                    heruistic=self.calculateManhattan()
+                    heruistic=self.calculateManhattan()+self.current_level+1
                 elif self.greedy and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()
                 elif self.greedy and self.manhattan:
@@ -110,7 +110,7 @@ class Puzzle:
                 if self.a_star and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()+self.current_level+1
                 elif self.a_star and self.manhattan:
-                    heruistic=self.calculateManhattan()
+                    heruistic=self.calculateManhattan()+self.current_level+1
                 elif self.greedy and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()
                 elif self.greedy and self.manhattan:
@@ -147,7 +147,7 @@ class Puzzle:
                 if self.a_star and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()+self.current_level+1
                 elif self.a_star and self.manhattan:
-                    heruistic=self.calculateManhattan()
+                    heruistic=self.calculateManhattan()+self.current_level+1
                 elif self.greedy and self.misplaced:
                     heruistic=self.calculateMisplacedTiles()
                 elif self.greedy and self.manhattan:
